@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/fav"
+            android:title="Favourites" />
+
+    </group>
+
+    <item android:title="Categories">
+        <menu>
+            <item
+                android:id="@+id/success"
+                android:title="Success" />
+
+            <item
+                android:id="@+id/morning"
+                android:title="Morning Wishes" />
+
+            <item
+                android:id="@+id/life"
+                android:title="Life" />
+
+            <item
+                android:id="@+id/anniversary"
+                android:title="Anniversary" />
+
+            <item
+                android:id="@+id/relationship"
+                android:title="Relationship" />
+
+            <item
+                android:id="@+id/student"
+                android:title="Student" />
+            <item
+                android:id="@+id/teacher"
+                android:title="Teacher" />
+
+            <item
+                android:id="@+id/friend"
+                android:title="Friendship" />
+
+            <item
+                android:id="@+id/love"
+                android:title="Love" />
+
+            <item
+                android:id="@+id/depression"
+                android:title="Depression" />
+
+            <item
+                android:id="@+id/angry"
+                android:title="Angry" />
+
+            <item
+                android:id="@+id/sorry"
+                android:title="Sorry" />
+
+            <item
+                android:id="@+id/hate"
+                android:title="Hate" />
+        </menu>
+    </item>
+
+</menu>

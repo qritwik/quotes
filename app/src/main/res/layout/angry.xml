@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_angry"
+        android:layout_width="match_parent"
+        android:layout_above="@id/adView_angry"
+        android:background="#616161"
+
+        android:layout_marginBottom="2dp"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/pb1"-->
+    <!--style="?android:attr/progressBarStyleLarge"-->
+
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:indeterminate="true"-->
+    <!--android:indeterminateTintMode="src_atop"-->
+    <!--android:indeterminateTint="@color/colorPrimary"-->
+    <!--android:layout_centerInParent="true"/>-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/av_angry"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:lottie_colorFilter="#ffffff"
+
+
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="poi.json"
+        app:lottie_loop="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_angry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adView_angry"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_photo_size_select_actual_black_24dp"
+        android:layout_margin="@dimen/fab_margin"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_angry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8750480772839804/7824136399">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>

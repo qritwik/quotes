@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#424242"
+    tools:context=".Setting">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#616161"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar123"
+        app:titleTextColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="4dp"
+        app:popupTheme="@style/Platform.ThemeOverlay.AppCompat.Dark"
+        android:background="@color/colorPrimary">
+        </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:id="@+id/report_bug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report a bug"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textColor="#e0e0e0"/>
+
+        <TextView
+            android:paddingTop="3dp"
+
+            android:textColor="#bdbdbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell me if you found any problem."/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bdbdbd"/>
+
+    <LinearLayout
+        android:id="@+id/email_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email me"
+
+
+            android:textColor="#e0e0e0"/>
+
+        <TextView
+            android:paddingTop="3dp"
+            android:textColor="#bdbdbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give us your suggestions."/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bdbdbd"/>
+
+    <LinearLayout
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate us"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textColor="#e0e0e0"/>
+
+        <TextView
+            android:paddingTop="3dp"
+            android:textColor="#bdbdbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give a positive feedback to us on playstore."/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bdbdbd"/>
+
+    <LinearLayout
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share this App"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textColor="#e0e0e0"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bdbdbd"/>
+
+
+    <LinearLayout
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Motivational Quotes"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textColor="#e0e0e0"/>
+
+        <TextView
+            android:paddingTop="3dp"
+            android:textColor="#bdbdbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

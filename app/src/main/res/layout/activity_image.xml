@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#616161"
+    tools:context=".image">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#616161"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar123456"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:title="Quotes"
+        android:layout_below="@id/view_top"
+        android:elevation="4dp"
+        app:titleTextColor="#ffffff"
+        android:background="@color/colorPrimaryDark"></android.support.v7.widget.Toolbar>
+    <ProgressBar
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/image123"
+        android:layout_width="match_parent"
+        android:src="@drawable/shoot"
+        android:scaleType="fitXY"
+
+        android:layout_above="@id/adView_image"
+        android:layout_below="@id/toolbar123456"
+        android:layout_height="match_parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/iop123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_above="@id/ll1"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll1"
+        android:elevation="4dp"
+        android:layout_height="43dp"
+        android:background="#803b3b3b"
+        android:layout_above="@id/view_last"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/ll_download"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+
+                android:layout_width="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="17dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/lopi"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+
+                android:id="@+id/download"
+                android:textSize="11.5dp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Download"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+
+                android:layout_gravity="center_vertical"
+
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/shr"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+
+                android:textStyle="bold"
+
+                android:fontFamily="serif"
+                android:id="@+id/share"
+                android:textSize="11.5dp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Share"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/ll_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+
+                android:id="@+id/fav_heart_btn"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/favorite"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+
+                android:fontFamily="serif"
+                android:id="@+id/favourite"
+                android:textSize="11.5dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Favourite"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_last"
+
+        android:layout_above="@+id/adView_image"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"/>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8750480772839804/9560600334">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+</RelativeLayout>
